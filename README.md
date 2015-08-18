@@ -110,7 +110,7 @@ end
 
 ## More
 
-For static site (e.g. jekyll) quick start scripts, see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+For static site (e.g. jekyll) quick starter scripts, see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
 
 ## Meta
 
