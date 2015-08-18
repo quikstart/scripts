@@ -96,17 +96,21 @@ use( 'rubyref/gem-starter-template' )
 
 #### config block
 
-update _config.yml settings
+settings (variables) to use in templates (e.g. `class $klass$`)
+and filenames (e.g. `lib/$filename$.rb`)
 
 ```ruby
 config do |c|
-  c.hola        = "hola"
+  c.name        = "hola"
   c.klass       = "Hola"
   ...
 end
 ```
 
 
+## More
+
+For static site (e.g. jekyll) quick start scripts, see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
 
 ## Meta
 
