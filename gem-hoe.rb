@@ -55,8 +55,8 @@ end
 
 def make_bin_file_name( file_name )
   # e.g. pack/hola   => pack_hola
-  file_name = file_name.gsub( /\//, "_")
-  file_name
+  bin_file_name = file_name.gsub(/\//, "_")
+  bin_file_name
 end
 
 def make_test_file_name( file_name )
