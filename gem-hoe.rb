@@ -1,3 +1,7 @@
+##
+# note: hoe_plugins makro requires hoe
+require 'hoe'
+
 
 say "Hello from the gem quick starter wizard script (hoe classic edition)"
 
@@ -44,6 +48,17 @@ def make_file_name( project )
   file_name
 end
 
+def make_ext_name( file_name )
+  ## e.g. pack/hola   => hola
+  File.basename( file_name )
+end
+
+def make_bin_file_name( file_name )
+  # e.g. pack/hola   => pack_hola
+  file_name = file_name.gsub( /\//, "_")
+  file_name
+end
+
 def make_test_file_name( file_name )
   ## e.g. hola              => test_hola
   ##      pack/hola         => pack/test_hola
@@ -53,7 +68,7 @@ def make_test_file_name( file_name )
   basename = File.basename( file_name )
 
   test_file_name = ''
-  test_file_name << "#{dirname}/"      unless dirname.empty?
+  test_file_name << "#{dirname}/"      unless dirname.empty? || dirname == "." 
   test_file_name << "test_#{basename}"
   test_file_name
 end
@@ -79,16 +94,21 @@ end
 # config block / settings used in templates and filenames/paths  e.g. $project$, $file_name$, etc.
 
 config do |c|
-  c.name       = name   # note: used by quik; if name present will get used for output dir (if not; uses current/working folder e.g. ./)
-  c.project    = name
+  c.project        = name
   c.file_name      = make_file_name( c.project )
+  c.ext_name       = make_ext_name( c.file_name )
   c.klass          = make_klass( c.project )
   c.test_klass     = make_test_klass( c.klass )
+
+  # note: used by quik; if name present will get used for output dir
+  #  (if not; uses current/working folder e.g. ./)
+  c.name           = c.ext_name
 
   ## fix: some hoe sow bugs e.g. wrong entry in manifest if used w/ module -- add new $test_file_name$
   ## e.g. pack-hola becomes
   ##   pack/test_hola   (NOT test_pack/hola)
-  c.test_file_name = make_test_file_name( c.file_name ) 
+  c.test_file_name = make_test_file_name( c.file_name )
+  c.bin_file_name  = make_bin_file_name( c.file_name )
 
   c.date        = Time.new.strftime("%Y-%m-%d")  ## e.g. use like $date$  => 2015-08-27
   c.year        = Time.new.strftime("%Y")        ## e.g. use like $year$  => 2015
@@ -97,3 +117,4 @@ config do |c|
   c.sub_modules_for_klass      = make_sub_modules( c.klass )
   c.sub_modules_for_test_klass = make_sub_modules( c.test_klass )
 end  
+
