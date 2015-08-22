@@ -9,6 +9,6 @@ use "rubyref/gem-starter-template-hoe"
 
 config do |c|
   c.name     = name
-  c.filename = name
-  c.klass    = klass
+  ## c.filename = name
+  ## c.klass    = klass
 end  
