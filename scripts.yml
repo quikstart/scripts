@@ -1,0 +1,13 @@
+###########################################
+# Quik (qk/quik) Starter Wizard Scripts
+#
+
+- name:    gem
+  summary: Gem Quick Starter Template
+
+- name:    gem-hoe
+  summary: Gem Quick Starter Template (Hoe Classic Edition)
+
+- name:    sinatra
+  summary: Sinatra Quick Starter Template
+
