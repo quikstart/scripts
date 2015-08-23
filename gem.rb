@@ -6,7 +6,7 @@ name  = ask "Name of the gem", "hola"
 def make_module( name )
   ## e.g. hola         => Hola
   ##      my_gem       => MyGem
-  module_name = project.gsub(/(?:^|_)([a-z])/) { $1.upcase }
+  module_name = name.gsub(/(?:^|_)([a-z])/) { $1.upcase }
   module_name
 end
 
