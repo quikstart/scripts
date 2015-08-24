@@ -3,7 +3,22 @@
 
 ## Usage
 
-Type in your shell:
+To list all "official" registered quick starter templates / scripts type in your shell:
+
+```
+$ quick ls
+```
+
+Resulting in:
+
+```
+  1..gem        .:.  Gem Quick Starter Template
+  2..gem-hoe    .:.  Gem Quick Starter Template (Hoe Classic Edition)
+  3..sinatra    .:.  Sinatra Quick Starter Template
+...
+```
+
+To use a quick starter script and template use the new command and the script name. Example:
 
 ```
 $ quik new gem
@@ -110,7 +125,9 @@ end
 
 ## More
 
-For static site (e.g. jekyll) quick starter scripts, see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+For static site (e.g. jekyll) quick starter scripts, 
+see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+
 
 ## Meta
 
