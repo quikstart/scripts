@@ -85,19 +85,19 @@ say( "Welcome" )
 #### ask(question, [default])
 
 ```ruby
-title = ask( "What's gem's name" )
+title = ask( "What's your gem's name" )
 ```
 
 #### yes?(question, [default]) or no?(question, [default])
 
 ```ruby
-puts "yes, sir"   if yes?( "Add minitest" )
+puts "Yes, sir!"   if yes?( "Add minitest" )
 ```
 
 #### select( title, choices, [default] )
 
 ```ruby
-style = select( "Select your gem template", ["Rubyref", "Hoe (Classic)", "Bundler"] )
+style = select( "Select your gem template", ["Standard", "Hoe (Classic)", "Bundler"] )
 ```
 
 #### use( key )
