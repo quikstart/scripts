@@ -10,4 +10,8 @@
 
 - name:    sinatra
   summary: Sinatra Quick Starter Template
+  
+- name:    jekyll-theme
+  summary: Jekyll Quick Starter Theme
+
 
