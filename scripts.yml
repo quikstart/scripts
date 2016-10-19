@@ -14,4 +14,6 @@
 - name:    jekyll-theme
   summary: Jekyll Quick Starter Theme
 
-
+- name:    QS-Jekyll-Flex
+  summary: Jekyll Quick Starter Theme 2 columns (Flex)
+  
