@@ -4,6 +4,7 @@
 
 - name:    gem
   summary: Gem Quick Starter Template
+  script:  https://github.com/quikstart/gem-starter-template/raw/master/quik.rb
 
 - name:    gem-hoe
   summary: Gem Quick Starter Template (Hoe Classic Edition)
