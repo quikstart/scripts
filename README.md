@@ -47,7 +47,7 @@ folder.
 ## Write Your Own Quik Script
 
 
-Example - [`gem-starter-template/quick.rb`](https://github.com/quikstart/gem-starter-template/blob/master/quik.rb):
+Example - [`gem-starter-template/quik.rb`](https://github.com/quikstart/gem-starter-template/blob/master/quik.rb):
 
 ```ruby
 ###############################################
