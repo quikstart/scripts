@@ -8,13 +8,14 @@
 
 - name:    gem-hoe
   summary: Gem Quick Starter Template (Hoe Classic Edition)
+  script:  https://github.com/quikstart/gem-starter-template-hoe/raw/master/quik.rb
 
 - name:    sinatra
   summary: Sinatra Quick Starter Template
-  
+  script:  https://github.com/quikstart/sinatra-starter-template/raw/master/quik.rb
+
 - name:    jekyll-theme
   summary: Jekyll Quick Starter Theme
+  script:  https://github.com/quikstart/jekyll-starter-theme/raw/master/quik.rb
 
-- name:    sz-jekyll-flex
-  summary: Jekyll Quick Starter Theme 2 columns (Flex)
-  
+

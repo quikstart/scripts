@@ -1,4 +1,4 @@
-# Quik Scripts - Ruby Quick Starter Template Wizard Scripts - Add Your Script!
+# Quik Scripts Catalog / Directory / Registry - Ruby Quick Starter Template Wizard Scripts - Add Your Script!
 
 
 ## Usage
@@ -34,8 +34,8 @@ Q: What's your gem's module? [Hola]: Hello
 
 Thanks! Ready-to-go. Stand back.
 
-  Downloading Rubyref Gem Starter Template...
-  Setting up Rubyref Starter Template...
+  Downloading Gem Starter Template...
+  Setting up Gem Starter Template...
   ...
 Done.
 ```
@@ -47,7 +47,7 @@ folder.
 ## Write Your Own Quik Script
 
 
-Example - `gem.rb`:
+Example - [`gem.rb`](https://github.com/quikstart/gem-starter-template/blob/master/quik.rb):
 
 ```ruby
 ###############################################
@@ -59,14 +59,14 @@ name  = ask "Name of the gem", "hola"
 klass = ask "Module name of the gem", "Hola"
 
 
-use "rubyref/gem-starter-template"
+use "quikstart/gem-starter-template"
 
 
 config do |c|
   c.name     = name
   c.filename = name
   c.klass    = klass
-end  
+end
 
 say "Done."
 ```
@@ -105,7 +105,7 @@ style = select( "Select your gem template", ["Standard", "Hoe (Classic)", "Bundl
 download and setup (unzip/unpack) template (from github repo)
 
 ```ruby
-use( 'rubyref/gem-starter-template' )
+use( 'quikstart/gem-starter-template' )
 ```
 
 
@@ -123,20 +123,8 @@ end
 ```
 
 
-## More
 
-For static site (e.g. jekyll) quick starter scripts, 
-see the  [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
-
-
-## Meta
-
-### License
-
-The `quik` scripts are dedicated to the public domain.
-Use it as you please with no restrictions whatsoever.
-
-### Questions? Comments?
+## Questions? Comments?
 
 Send them along to the ruby-talk mailing list.
 Thanks!
